@@ -64,7 +64,8 @@
                                       <h2 class="card-title h4"><%= blog.title %></h2>
                                       <h4 class="card-title h6">作成者：<%= blog.name %></h6>
                                       <p class="card-text"><%= blog.content %></p>
-                                      <a class="btn btn-primary" href="#!">Read more →</a>
+                                      <div><%= link_to "詳細を見る", blog_path(blog.id), class: "btn btn-primary" %></div>
+                                      <div><%= link_to '編集する', edit_blog_path(blog.id), class: 'btn btn-success' %></div>
                                   </div>
                               </div>
                           </div>
@@ -100,21 +101,21 @@
                     </div>
                     <!-- Categories widget-->
                     <div class="card mb-4">
-                        <div class="card-header">Categories</div>
+                        <div class="card-header">Menu</div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Web Design</a></li>
-                                        <li><a href="#!">HTML</a></li>
-                                        <li><a href="#!">Freebies</a></li>
+                                        <li><%= link_to 'ブログを作成する',new_blog_path %></li>
+                                        <li><a href="#!"></a></li>
+                                        <li><a href="#!"></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">JavaScript</a></li>
-                                        <li><a href="#!">CSS</a></li>
-                                        <li><a href="#!">Tutorials</a></li>
+                                        <li><a href="#!"></a></li>
+                                        <li><a href="#!"></a></li>
+                                        <li><a href="#!"></a></li>
                                     </ul>
                                 </div>
                             </div>
