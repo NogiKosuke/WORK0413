@@ -10823,4 +10823,25 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+  .myfooter {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: table;
+  }
+  .mycontainer {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  
 }
